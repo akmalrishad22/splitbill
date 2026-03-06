@@ -137,6 +137,14 @@ model tidak menghasilkan field s_cnt pada beberapa struk sehingga terdapat error
 ![finishapp](figs/finishapp.PNG)<br>
 Menambah button finish untuk reset agar aplikasi bisa digunakan dari awal kembali
 
+## Analisis akhir
+
+Produk aplikasi SplitBill yang dikembangkan sudah berjalan dengan baik secara fungsional. Aplikasi ini mampu memproses gambar struk dan mengekstraksi informasi item serta total harga menggunakan teknologi OCR. Salah satu keunggulan dari aplikasi ini adalah fleksibilitas dalam pemilihan model OCR, seperti penggunaan TrOCR untuk text recognition dan Donut sebagai model end-to-end document understanding.
+
+Dengan adanya pilihan beberapa model, pengguna dapat menyesuaikan metode yang digunakan berdasarkan kebutuhan, baik dari segi akurasi maupun kecepatan pemrosesan. Selain itu, sistem juga mampu melakukan parsing hasil OCR menjadi data terstruktur sehingga memudahkan proses pembagian tagihan (split bill).
+
+Secara keseluruhan, aplikasi ini telah berhasil mengintegrasikan proses deteksi teks, pengenalan teks, serta pengolahan data menjadi satu alur kerja yang dapat digunakan secara praktis untuk membantu pengguna membagi tagihan dari gambar struk.
+
 ## Link Video Demo
 
 https://drive.google.com/file/d/1sMlthN00rKIDJ6z04T4zRoGrORsvrPsX/view?usp=sharing
