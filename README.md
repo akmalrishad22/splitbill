@@ -1,6 +1,6 @@
 # Split Bill Application
 
-This repository contains AI-based application for splitting-bill, written on python (streamlit) and can be run on your local computer. 
+This repository contains AI-based application for splitting-bill, written on python (streamlit) and can be run on your local computer.
 
 Courtesy of: https://github.com/MukhlasAdib
 
@@ -29,6 +29,7 @@ with virtualenv:
     pip install virtualenv
     python -m virtualenv .ven
 ```
+
 with uv:
 
 ```bash
@@ -56,6 +57,7 @@ with virtualenv:
 ```bash
     pip install -r requirements.txt
 ```
+
 with uv:
 
 ```bash
@@ -88,7 +90,18 @@ with virtualenv:
 
 with uv:
 
-
 ```bash
     uv run streamlit run app.py
 ```
+
+# ANALISIS
+
+| Feature      | TrOCR        | Donut                  |
+| ------------ | ------------ | ---------------------- |
+| Tujuan       | OCR          | Document Understanding |
+| Output       | Text         | Structured JSON        |
+| Speed        | Lebih Cepat  | Lebih Lambat           |
+| Akurasi Teks | Sangat Bagus | Kadang Miss            |
+| Parsing      | Manual       | Otomatis               |
+| Training     | mudah        | Lebih sulit            |
+| Pipeline     | Complex      | Simple                 |
