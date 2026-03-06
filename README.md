@@ -122,3 +122,17 @@ with uv:
 ## Analisis model
 
 Kedua model memiliki kekurangan dan kelebihan masing masing. Keunggulan utama TrOCR adalah kecepatan inference yang lebih tinggi, sehingga cocok digunakan pada pipeline OCR yang membutuhkan efisiensi. Sebaliknya, Donut dirancang untuk langsung menghasilkan struktur data dari gambar dokumen tanpa melalui tahap OCR terpisah. Model ini dapat mengubah gambar struk secara langsung menjadi format terstruktur seperti JSON atau XML yang berisi informasi item, jumlah, harga, dan total. Pendekatan ini membuat proses ekstraksi informasi menjadi lebih sederhana karena tidak memerlukan tahap parsing tambahan. Namun, hasil pengujian menunjukkan bahwa model Donut memiliki beberapa keterbatasan seperti kemungkinan munculnya kesalahan parsing ketika struktur output berbeda dari yang diharapkan, serta waktu inference yang lebih lama dibandingkan TrOCR.
+
+## Analisis aplikasi
+
+Secara fitur aplikasi sudah sangat baik sesuai dengan fungsi nya yaitu split bill. namun masih terdapat beberapa bug antara lain:
+
+1. Error saat upload struk model Donut (hanya beberapa case)
+
+![errordonut](figs/errordonut.PNG)
+model tidak menghasilkan field s_cnt pada beberapa struk di output untuk bill ini sehingga terdapat error seperti diatas.
+
+2. Menambah tombol finish (saran)
+
+![finishapp](figs/finishapp.PNG)
+Menambah button finish untuk reset agar aplikasi bisa digunakan dari awal kembali
