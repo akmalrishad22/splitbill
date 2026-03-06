@@ -136,3 +136,7 @@ model tidak menghasilkan field s_cnt pada beberapa struk sehingga terdapat error
 
 ![finishapp](figs/finishapp.PNG)<br>
 Menambah button finish untuk reset agar aplikasi bisa digunakan dari awal kembali
+
+## Link Video Demo
+
+https://drive.google.com/file/d/1sMlthN00rKIDJ6z04T4zRoGrORsvrPsX/view?usp=sharing
