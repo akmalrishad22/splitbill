@@ -96,12 +96,25 @@ with uv:
 
 # ANALISIS
 
-| Feature      | TrOCR        | Donut                  |
-| ------------ | ------------ | ---------------------- |
-| Tujuan       | OCR          | Document Understanding |
-| Output       | Text         | Structured JSON        |
-| Speed        | Lebih Cepat  | Lebih Lambat           |
-| Akurasi Teks | Sangat Bagus | Kadang Miss            |
-| Parsing      | Manual       | Otomatis               |
-| Training     | mudah        | Lebih sulit            |
-| Pipeline     | Complex      | Simple                 |
+## Analisis Awal
+
+|   Feature    |    TrOCR     |         Donut          |
+| :----------: | :----------: | :--------------------: |
+|    Tujuan    |     OCR      | Document Understanding |
+|    Output    |     Text     |    Structured JSON     |
+|    Speed     | Lebih Cepat  |      Lebih Lambat      |
+| Akurasi Teks | Sangat Bagus |      Kadang Miss       |
+|   Parsing    |    Manual    |        Otomatis        |
+|   Training   |    mudah     |      Lebih sulit       |
+|   Pipeline   |   Complex    |         Simple         |
+
+## Result
+
+|   Feature    |                                     TrOCR                                      |                  Donut                  |
+| :----------: | :----------------------------------------------------------------------------: | :-------------------------------------: |
+|    Speed     |                       ![trocrtime](figs/trocrtime.PNG.)                        |    ![donuttime](figs/donuttime.PNG.)    |
+| Akurasi text | ![trocrtextacc](figs/trocrtextacc.PNG.) <br> Bergantung parsing yang digunakan | ![donuttextacc](figs/donuttextacc.PNG.) |
+
+## Analisis model
+
+Kedua model memiliki kekurangan dan kelebihan masing masing. Keunggulan utama TrOCR adalah kecepatan inference yang lebih tinggi, sehingga cocok digunakan pada pipeline OCR yang membutuhkan efisiensi. Sebaliknya, Donut dirancang untuk langsung menghasilkan struktur data dari gambar dokumen tanpa melalui tahap OCR terpisah. Model ini dapat mengubah gambar struk secara langsung menjadi format terstruktur seperti JSON atau XML yang berisi informasi item, jumlah, harga, dan total. Pendekatan ini membuat proses ekstraksi informasi menjadi lebih sederhana karena tidak memerlukan tahap parsing tambahan. Namun, hasil pengujian menunjukkan bahwa model Donut memiliki beberapa keterbatasan seperti kemungkinan munculnya kesalahan parsing ketika struktur output berbeda dari yang diharapkan, serta waktu inference yang lebih lama dibandingkan TrOCR.
