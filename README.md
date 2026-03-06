@@ -110,10 +110,10 @@ with uv:
 
 ## Result
 
-|   Feature    |                                     TrOCR                                      |                  Donut                  |
-| :----------: | :----------------------------------------------------------------------------: | :-------------------------------------: |
-|    Speed     |                       ![trocrtime](figs/trocrtime.PNG.)                        |    ![donuttime](figs/donuttime.PNG.)    |
-| Akurasi text | ![trocrtextacc](figs/trocrtextacc.PNG.) <br> Bergantung parsing yang digunakan | ![donuttextacc](figs/donuttextacc.PNG.) |
+|   Feature    |                                     TrOCR                                     |                 Donut                  |
+| :----------: | :---------------------------------------------------------------------------: | :------------------------------------: |
+|    Speed     |                       ![trocrtime](figs/trocrtime.PNG)                        |    ![donuttime](figs/donuttime.PNG)    |
+| Akurasi text | ![trocrtextacc](figs/trocrtextacc.PNG) <br> Bergantung parsing yang digunakan | ![donuttextacc](figs/donuttextacc.PNG) |
 
 ## Analisis model
 
