@@ -103,6 +103,7 @@ with uv:
 |    Tujuan    |     OCR      | Document Understanding |
 |    Output    |     Text     |    Structured JSON     |
 |    Speed     | Lebih Cepat  |      Lebih Lambat      |
+|  Detection   |      x       |        implicit        |
 | Akurasi Teks | Sangat Bagus |      Kadang Miss       |
 |   Parsing    |    Manual    |        Otomatis        |
 |   Training   |    mudah     |      Lebih sulit       |
@@ -110,10 +111,13 @@ with uv:
 
 ## Result
 
-|   Feature    |                                     TrOCR                                     |                 Donut                  |
-| :----------: | :---------------------------------------------------------------------------: | :------------------------------------: |
-|    Speed     |                       ![trocrtime](figs/trocrtime.PNG)                        |    ![donuttime](figs/donuttime.PNG)    |
-| Akurasi text | ![trocrtextacc](figs/trocrtextacc.PNG) <br> Bergantung parsing yang digunakan | ![donuttextacc](figs/donuttextacc.PNG) |
+|   Feature    |                                      TrOCR                                      |                 Donut                  |
+| :----------: | :-----------------------------------------------------------------------------: | :------------------------------------: |
+|    Output    |                      ![outputtrocr](figs/outputtrocr.PNG)                       |  ![outputdonut](figs/outputdonut.PNG)  |
+|    Speed     |                        ![trocrtime](figs/trocrtime.PNG)                         |    ![donuttime](figs/donuttime.PNG)    |
+|  Detection   |                   ![detectiontrocr](figs/detectiontrocr.PNG)                    |                implicit                |
+| Akurasi text | ![trocrtextacc](figs/trocrtextacc.PNG) <br> Bergantung Detection yang digunakan | ![donuttextacc](figs/donuttextacc.PNG) |
+|   parsing    |                     ![parsingtrocr](figs/parsingtrocr.PNG)                      |                otomatis                |
 
 ## Analisis model
 
