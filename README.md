@@ -129,10 +129,10 @@ Secara fitur aplikasi sudah sangat baik sesuai dengan fungsi nya yaitu split bil
 
 1. Error saat upload struk model Donut (hanya beberapa case)
 
-![errordonut](figs/errordonut.PNG)
-model tidak menghasilkan field s_cnt pada beberapa struk di output untuk bill ini sehingga terdapat error seperti diatas.
+![errordonut](figs/errordonut.PNG)<br>
+model tidak menghasilkan field s_cnt pada beberapa struk sehingga terdapat error seperti diatas.
 
 2. Menambah tombol finish (saran)
 
-![finishapp](figs/finishapp.PNG)
+![finishapp](figs/finishapp.PNG)<br>
 Menambah button finish untuk reset agar aplikasi bisa digunakan dari awal kembali
